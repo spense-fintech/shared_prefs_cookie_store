@@ -1,7 +1,7 @@
 name: shared_prefs_cookie_store
-description: A new Flutter plugin project.
+description: A Flutter shared preferences plugin for managing HTTP cookies. This plugin provides a straightforward approach to managing cookies in Flutter applications using SharedPreferences as a storage medium while ensuring cookie persistence.
 version: 0.0.1
-homepage:
+homepage: https://spense.money
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
