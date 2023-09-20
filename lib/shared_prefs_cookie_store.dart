@@ -2,14 +2,14 @@ import 'package:cookie_jar/cookie_jar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPrefsCookieStore implements CookieJar {
-  SharedPrefsCookieStore([this.prefs, this.ignoreExpires = false]);
+  SharedPrefsCookieStore([this._prefs, this.ignoreExpires = false]);
 
-  final Future<SharedPreferences>? prefs;
+  final Future<SharedPreferences>? _prefs;
   @override
   final bool ignoreExpires;
 
   Future<SharedPreferences> _getPrefs() async {
-    return prefs ?? SharedPreferences.getInstance();
+    return _prefs ?? SharedPreferences.getInstance();
   }
 
   @override
@@ -71,6 +71,6 @@ class SharedPrefsCookieStore implements CookieJar {
   }
 
   String _getCookieKey(Uri uri) {
-    return '${uri.scheme}://${uri.host}';
+    return 'cookies.${uri.scheme}://${uri.host}';
   }
 }
