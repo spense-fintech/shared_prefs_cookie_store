@@ -11,14 +11,33 @@ A Flutter shared preferences plugin for managing HTTP cookies. This plugin provi
 
 ### 🖥 Installation
 
-Add this to your pubspec.yaml file:
+Use this package as a library
+
+Run this command:
+
+With Dart:
+
+```console
+ $ dart pub add shared_prefs_cookie_store
+```
+
+With Flutter:
+
+```console
+ $ flutter pub add shared_prefs_cookie_store
+```
+
+This will add a line like this to your package's pubspec.yaml (and run an implicit dart pub get):
 
 ```yaml
 dependencies:
-  shared_prefs_cookie_store: ^replace-with-latest-version
+  shared_prefs_cookie_store: ^latest_version
 ```
+Alternatively, your editor might support dart pub get or flutter pub get. Check the docs for your editor to learn more.
 
-Then, run this on your terminal:
+Import it
+Now in your Dart code, you can use:
+
 ```console
-$ flutter pub get
+import 'package:shared_prefs_cookie_store/shared_prefs_cookie_store.dart';
 ```
