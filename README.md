@@ -1,4 +1,5 @@
 # shared_prefs_cookie_store
+
 A Flutter shared preferences plugin for managing HTTP cookies. This plugin provides a straightforward approach to managing cookies in Flutter applications using SharedPreferences as a storage medium while ensuring cookie persistence.
 
 ### 📋 Features
