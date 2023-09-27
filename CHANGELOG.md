@@ -3,3 +3,7 @@
 ## 0.0.1
 
 - Initial version
+
+## 0.0.2
+
+- Removed Platform Specific implementation, instead using only one single generic Dart implementation
